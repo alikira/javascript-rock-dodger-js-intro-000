@@ -136,7 +136,7 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    window.requestAnimationFrame(function(){
-     if(dodgerLeftEdge>3){
+     if(positionToInteger(DODGER.style.left)>3){
        DODGER.style.left=`${left - 4}px`
      }
    })
@@ -149,7 +149,7 @@ function moveDodgerRight() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    window.requestAnimationFrame(function(){
-     if(dodgerRightEdge>3){
+     if(positionToInteger(DODGER.style.right)>3){
        DODGER.style.left=`${left + 4}px`;
      }
    })
