@@ -154,7 +154,7 @@ function moveDodgerRight() {
    console.log(positionToInteger(DODGER.style.left));
    window.requestAnimationFrame(function(){
      var left=positionToInteger(DODGER.style.left);
-     if(positionToInteger(DODGER.style.right)<140){
+     if(left<140){
        DODGER.style.left=`${left + 4}px`;
      }
    })
