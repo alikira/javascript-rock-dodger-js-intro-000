@@ -151,6 +151,7 @@ function moveDodgerRight() {
    */
    console.log('right');
    console.log(positionToInteger(DODGER.style.right));
+   console.log(positionToInteger(DODGER.style.left));
    window.requestAnimationFrame(function(){
      var left=positionToInteger(DODGER.style.left);
      if(positionToInteger(DODGER.style.right)>3){
